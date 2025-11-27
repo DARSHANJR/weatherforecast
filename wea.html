@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> weather forecast</title>
+    <link rel="stylesheet" href="we.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-bar">
+                <h1> weather dashboard</h1>
+                <button id="themeToggle">🌙</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="cityinput" placeholder="enter city name">
+                <button id="searchBtn"> Search</button>
+                <button id="locateBtn" title="Detect my location">📍</button>
+            </div>
+            <div class="weather-info" id="weatherinfo">
+                <h2 id="cityName"></h2>
+                <i id="weathericon" class="wi"></i>
+                <p id="temp"></p>
+                <p id="condition"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+            <h3> 5 day forecast </h3>
+            <div class="forecast" id="forecast"></div>
+        </div>
+    <script src="we.js"></script>
+    </body>
+</html>
